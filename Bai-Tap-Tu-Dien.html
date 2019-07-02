@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+    <script>
+        let English = ["eat","drink","sleep","run"];
+        let Vietnamese = ["ăn","uống","ngủ","chạy"];
+        let result = '';
+
+        let str = prompt('Nhập từ cần tra : ');
+        console.log(English.length);
+
+        for (i = 0; i < English.length; i++) {
+            if (English[i] === str) {
+                result = Vietnamese[i];
+                break;
+            }else{
+                result = 'Không tìm được từ cần tra !';
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

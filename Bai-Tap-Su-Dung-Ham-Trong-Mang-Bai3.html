@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng hàm có sẵn của mảng</title>
+</head>
+<body>
+    <script>
+        let str = prompt('Enter your text : ');
+        const Upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const Lower = 'abcdefghijklmnopqrstuvwxyz';
+        let result = [];
+
+        for (i = 0; i < str.length; i++) {
+            if (Upper.includes(str[i])) {
+                result.push(str[i].toLocaleLowerCase());
+            }else if (Lower.includes(str[i])) {
+                result.push(str[i].toLocaleUpperCase());
+            }else {
+                result.push(str[i]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+</html>
